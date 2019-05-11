@@ -1,7 +1,7 @@
 "use strict";
 
 let update = () => {
-    fetch('http://127.0.0.1:8000/api/get')
+    fetch('/api/get')
         .then(response => response.json())
         .then(data => {
             let numEl = document.getElementById('num');
@@ -14,16 +14,16 @@ let init = () => {
     update();
 
     document.getElementById('increment').addEventListener('click', () => {
-        fetch('http://127.0.0.1:8000/api/increment').then(update);
+        fetch('/api/increment').then(update);
     });
 
     document.getElementById('decrement').addEventListener('click', () => {
-        fetch('http://127.0.0.1:8000/api/decrement').then(update);
+        fetch('/api/decrement').then(update);
     });
 
     document.getElementById('reset').addEventListener('click', () => {
         if (confirm("Möchten Sie wirklich den Zähler zurücksetzen?"))
-            fetch('http://127.0.0.1:8000/api/set/0').then(update);
+            fetch('/api/set/0').then(update);
     });
 };
 

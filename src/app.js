@@ -1,25 +1,16 @@
-"use strict";
+'use strict';
 
 const express = require('express');
 const app = express();
-const path = require('path');
+const Counter = require('./counter.js');
 
-app.use(express.static('web'));
-
-class Counter {
-    constructor() {
-        this.counter = 0;
-    }
-    set(c) {
-        this.counter = c;
-    }
-    increment() { ++this.counter; }
-    decrement() { --this.counter; }
-}
 
 let counter = new Counter();
 
 
+/**
+ * Routing
+ */
 app.get('/api/get', (req, res) => {
     res.send(counter)
 });
@@ -40,6 +31,12 @@ app.get('/api/set/:c', (req, res) => {
         counter.set(n);
     res.send(counter)
 });
+
+
+/**
+ * Express Setup
+ */
+app.use(express.static('web'));
 
 app.listen(8000, () => {
     console.log('RKBlutspendenVisualisierungs app listening on port 8000!')

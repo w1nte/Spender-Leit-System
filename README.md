@@ -13,5 +13,5 @@ pm2 start app.js -i 1
 pm2 startup
 ```
 
-Die Seite sollte nun über ```http://serverip:8000/``` erreichbar sein.
-Das Controlcenter kann über ```http://serverip:8000/control.html``` erreicht werden.
+Die Seite sollte nun über ```http://serverip:8000/view.html``` erreichbar sein.
+Das Controlcenter kann über ```http://serverip:8000/``` erreicht werden.

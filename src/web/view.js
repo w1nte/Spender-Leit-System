@@ -3,7 +3,7 @@
 let audio = new Audio('./ping.mp3');
 
 let update = (dontplaysound) => {
-    fetch('http://127.0.0.1:8000/api/get')
+    fetch('/api/get')
         .then(response => response.json())
         .then(data => {
             let numEl = document.getElementById('num');
