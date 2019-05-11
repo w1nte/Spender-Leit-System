@@ -7,7 +7,7 @@ sudo apt update
 sudo apt install nodejs npm git
 npm install -g pm2
 cd ~
-git clone $thisproject
+git clone git@github.com:w1nte/RKBlutspendenVisualisierung.git
 cd BlutspendenVisualisierung/nodejs
 pm2 start app.js -i 1
 pm2 startup
