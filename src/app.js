@@ -1,9 +1,10 @@
 'use strict';
 
 const express = require('express');
-const app = express();
 const Counter = require('./counter.js');
 
+
+const app = express();
 
 let counter = new Counter();
 
@@ -39,5 +40,5 @@ app.get('/api/set/:c', (req, res) => {
 app.use(express.static('web'));
 
 app.listen(8000, () => {
-    console.log('RKBlutspendenVisualisierungs app listening on port 8000!')
+    console.log('SLS app listening on port 8000!')
 });
