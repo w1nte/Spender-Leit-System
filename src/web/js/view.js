@@ -32,7 +32,7 @@ let resize_frontend = () => {
 let init = () => {
     update(true);
     resize_frontend();
-    setInterval(update, 1000);
+    setInterval(update, 2000);
 };
 
 document.addEventListener('DOMContentLoaded', init, false);

@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap');
+
 #frontend-num {
     /* Position */
-    left: 62%;
-    top: 17%;
+    left: 35%;
+    top: 30%;
 
     /* Styling */
-    font-size: 8vw;
-    font-weight: bold;
+    font-size: 34vh;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+    color: #ba2c80;
 
     /* Box Size */
-    width: 20%;
+    width: 30%;
 }
