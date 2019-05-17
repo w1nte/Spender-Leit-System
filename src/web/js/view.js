@@ -11,7 +11,10 @@ let update = (dontplaysound) => {
                 numEl.innerText = data.counter;
                 if (!dontplaysound) {
                     setTimeout(function() {
-                        audio.play();
+                        audio.currentTime = 0.;
+                        audio.play().catch(() => {
+                            console.log("To play a sound, you have to interact with the page!");
+                        });
                     });
                 }
             }
