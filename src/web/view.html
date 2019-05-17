@@ -2,30 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View</title>
-    <link href="style.css" rel="stylesheet">
-    <style>
-        #screen {
-            background: url('./frontend.jpg') no-repeat;
-        }
-        #num {
-            position: absolute;
-            left: 1225px;
-            top: 200px;
-            font-size: 120px;
-            font-weight: bold;
-            text-align: center;
-            width: 300px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Spender-Leit-System</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="custom/frontend.css" rel="stylesheet">
 </head>
-<body class="index">
+<body class="view">
 
-<div id="screen">
-<div id="num">0</div>
-</div>
+<div id="frontend"><div id="frontend-inner">
+    <div id="frontend-num">0</div>
+    <img id="frontend-image" src="custom/frontend.jpg">
+</div></div>
 
-<script src="./view.js"></script>
+<script src="js/view.js"></script>
 
 </body>
 </html>

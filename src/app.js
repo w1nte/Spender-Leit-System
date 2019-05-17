@@ -6,7 +6,7 @@ const Counter = require('./counter.js');
 
 const app = express();
 
-let counter = new Counter();
+const counter = new Counter();
 
 
 /**

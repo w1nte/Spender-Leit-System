@@ -4,7 +4,7 @@ let update = () => {
     fetch('/api/get')
         .then(response => response.json())
         .then(data => {
-            let numEl = document.getElementById('num');
+            let numEl = document.getElementById('frontend-num');
             if (numEl.innerText !== data.counter)
                 numEl.innerText = data.counter;
         });

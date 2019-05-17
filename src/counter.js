@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Counter class to increment, decrement a counter
+ * Controls a counter
  * @type {module.Counter}
  */
 module.exports = class Counter {

@@ -1,0 +1,13 @@
+#frontend-num {
+    /* Position */
+    left: 62%;
+    top: 17%;
+
+    /* Styling */
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+
+    /* Box Size */
+    width: 20%;
+}

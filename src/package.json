@@ -1,13 +1,13 @@
 {
-  "name": "rkbvis",
+  "name": "spender-leit-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The Spender-Leit-System (short SLS) is a webbased Application, that informs your Donors / Customers or Patients in the waiting area if they in turn. ",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Winte",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.16.4",
     "websocket": "^1.0.28"
