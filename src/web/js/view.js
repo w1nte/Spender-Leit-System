@@ -7,7 +7,7 @@ let update = (dontplaysound) => {
         .then(response => response.json())
         .then(data => {
             let numEl = document.getElementById('frontend-num');
-            if (parseInt(numEl.innerText) !== data.counter) {
+            if (parseInt(numEl.innerText) !== parseInt(data.counter)) {
                 numEl.innerText = data.counter;
                 if (!dontplaysound) {
                     setTimeout(function() {
